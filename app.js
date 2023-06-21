@@ -9,4 +9,5 @@
 // document.write(newrootclass);
 
 //================= Basit bir uygulama ========================
-//butona basınca elementin classı değişicek
+
+const root = documnet.getElementById()
