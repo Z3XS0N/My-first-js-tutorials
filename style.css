@@ -1,0 +1,9 @@
+.body-active{
+    background-color: black;
+    color: white;
+}
+
+.body-deactive{
+    background-color: white;
+    color: black;
+}
