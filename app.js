@@ -55,7 +55,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
 //===================== Öğrendiklerimden küçük bir Site sayfsı =====================
 
-const theme = document.querySelector(".light");
+/*const theme = document.querySelector(".light");
 const output = document.getElementById("output");
 
 document.getElementById("theme_btn").onclick=function(){
@@ -88,4 +88,4 @@ document.getElementById("form").addEventListener("submit",function(e){
     }
 
     document.getElementById("form").reset();
-});
+});*/
