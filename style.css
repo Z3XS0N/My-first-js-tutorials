@@ -1,9 +1,20 @@
-.body-active{
+.dark{
     background-color: black;
     color: white;
 }
 
-.body-deactive{
+.light{
     background-color: white;
     color: black;
+}
+
+.light_btn{
+    background-color: white;
+    color: black;
+}
+
+.dark_btn{
+    background-color: black;
+    color: white;
+    border-color: white;
 }

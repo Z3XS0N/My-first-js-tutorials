@@ -52,3 +52,38 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
     document.getElementById("form").reset();
 });*/
+
+//===================== Öğrendiklerimden küçük bir Site sayfsı =====================
+
+const theme = document.querySelector(".light");
+const output = document.getElementById("output");
+
+document.getElementById("theme_btn").onclick=function(){
+    if(this.innerHTML === "Light" && theme.className === "light"){
+        this.innerHTML = "Dark";
+        theme.className = "dark";
+    }else if(this.innerHTML === "Dark" && theme.className === "dark"){
+        this.innerHTML = "Light";
+        theme.className = "light";
+    }
+};
+
+document.getElementById("form").addEventListener("submit",function(e){
+    e.preventDefault();
+
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var passwd = document.getElementById("passwd").value;
+
+    if (username !== "" && email !== "" && passwd !== "") {
+        output.innerHTML = "Username: " + username + "<br> Email: " + email + "<br> Password: " + passwd;
+    } else if (username === "" && email !== "" && passwd !== "") {
+        output.innerHTML = "Veriler Bos";
+    } else if (username !== "" && email === "" && passwd !== "") {
+        output.innerHTML = "Veriler Bos";
+    } else if (username !== "" && email === "" && passwd === "") {
+        output.innerHTML = "Veriler Bos";
+    } else {
+        output.innerHTML = "Veriler Bos"
+    }
+});
