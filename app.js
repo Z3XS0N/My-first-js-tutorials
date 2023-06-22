@@ -26,19 +26,29 @@ document.getElementById("btn").onclick = function () {
     }
 };*/
 
-//================= formdan gelen verileri alma ============================
+//================= formdan gelen verileri almak ============================
 
+/*
 const output = document.getElementById("p");
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Sayfanın yeniden yüklenmesini önlemek için formun varsayılan davranışını engeller
 
-    // Formdaki girdileri al
-    var name = document.getElementById("name").value;
+document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+    var passwd = document.getElementById("passwd").value;
 
-    output.innerHTML = "Name: "+name+"<br>Email: "+email+"<br>Message:"+message;
+    if (username !== "" && email !== "" && passwd !== "") {
+        output.innerHTML = "Username: " + username + "<br> Email: " + email + "<br> Password: " + passwd;
+    } else if (username === "" && email !== "" && passwd !== "") {
+        output.innerHTML = "Veriler Bos";
+    } else if (username !== "" && email === "" && passwd !== "") {
+        output.innerHTML = "Veriler Bos";
+    } else if (username !== "" && email === "" && passwd === "") {
+        output.innerHTML = "Veriler Bos";
+    } else {
+        output.innerHTML = "Veriler Bos"
+    }
 
-    // Formu sıfırla (isteğe bağlı)
-    // document.getElementById("myForm").reset();
-});
+    document.getElementById("form").reset();
+});*/
