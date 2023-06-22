@@ -55,7 +55,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
 //===================== Öğrendiklerimden küçük bir Site sayfsı =====================
 
-/*
 const theme = document.querySelector(".light");
 const output = document.getElementById("output");
 
@@ -87,4 +86,6 @@ document.getElementById("form").addEventListener("submit",function(e){
     } else {
         output.innerHTML = "Veriler Bos"
     }
-});*/
+
+    document.getElementById("form").reset();
+});
