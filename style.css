@@ -18,3 +18,45 @@
     color: white;
     border-color: white;
 }
+
+.input_l{
+    width: 200px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.input_b{
+    width: 200px;
+    height: 20px;background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.form_div{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#output{
+    color: red;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#autput{
+    color: green;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

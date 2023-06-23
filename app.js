@@ -56,17 +56,23 @@ document.getElementById("form").addEventListener("submit", function (event) {
 //===================== Öğrendiklerimden küçük bir Site sayfsı =====================
 
 
-const theme = document.querySelector(".light");
 const themeBtn = document.getElementById("theme_btn");
-const buttons = document.querySelectorAll(".light_btn");
 const output = document.getElementById("output");
 
+const theme = document.querySelector(".light");
+const buttons = document.querySelectorAll(".light_btn");
+const inputs = document.querySelectorAll(".input_l");
+
 themeBtn.onclick = function() {
+
     if (this.innerHTML === "Light" && theme.className === "light") {
         this.innerHTML = "Dark";
         theme.className = "dark";
         buttons.forEach(function(button) {
             button.className = "dark_btn";
+        });
+        inputs.forEach(function(input){
+            input.className = "input_b";
         });
     } else if (this.innerHTML === "Dark" && theme.className === "dark") {
         this.innerHTML = "Light";
@@ -74,9 +80,11 @@ themeBtn.onclick = function() {
         buttons.forEach(function(button) {
             button.className = "light_btn";
         });
+        inputs.forEach(function(input){
+            input.className = "input_l";
+        });
     }
 };
-
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -85,8 +93,20 @@ document.getElementById("form").addEventListener("submit", function(e) {
     var passwd = document.getElementById("passwd").value;
 
     if (username !== "" && email !== "" && passwd !== "") {
-        output.innerHTML = "Username: " + username + "<br> Email: " + email + "<br> Password: " + passwd;
+        if(username.length > 2){
+            if(passwd.length > 4){
+                output.id = "autput";
+                output.innerHTML = "Username: " + username + "<br> Email: " + email + "<br> Password: " + passwd;
+            }else {
+                output.id = "output";
+                output.innerHTML = "Parola kısa";
+            }
+        }else {
+            output.id = "output";
+            output.innerHTML = "Kullanıcı adı kısa";
+        }
     } else {
+        output.id = "output";
         output.innerHTML = "Veriler Boş";
     }
 

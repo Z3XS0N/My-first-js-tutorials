@@ -57,15 +57,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="light">
-    <label>Theme=></label>
-    <button id="theme_btn" class="light_btn">Light</button>
-    <br><label id="output"><b></b></label><br>
+<label>Theme=></label>
+<button id="theme_btn" class="light_btn">Light</button>
+<br><label id="output"><b></b></label><br>
+<div class="form_div">
     <form id="form" action="index.html" method="post">
-        <input type="text" name="username" id="username" placeholder="Username"><br>
-        <input type="email" name="email" id="email" placeholder="Email"><br>
-        <input type="password" name="passwd" id="passwd" placeholder="Password"><br>
-        <button type="submit" class="light_btn" id="btn">Send</button>
+        <input type="text" class="input_l" name="username" id="username" placeholder="Username"><br>
+        <input type="email" class="input_l" name="email" id="email" placeholder="Email"><br>
+        <input type="password" class="input_l" name="passwd" id="passwd" placeholder="Password"><br>
+        <button style="
+            width: 100px;
+            border-radius: 7px;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translate(-50%,-50%);" type="submit" class="light_btn btn" id="btn">Send
+        </button>
     </form>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
