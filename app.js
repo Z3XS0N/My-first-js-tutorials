@@ -56,6 +56,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 //===================== Öğrendiklerimden küçük bir Site sayfsı =====================
 
 
+/*
 const themeBtn = document.getElementById("theme_btn");
 const output = document.getElementById("output");
 
@@ -111,4 +112,4 @@ document.getElementById("form").addEventListener("submit", function(e) {
     }
 
     document.getElementById("form").reset();
-});
+});*/
