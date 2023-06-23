@@ -55,20 +55,29 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
 //===================== Öğrendiklerimden küçük bir Site sayfsı =====================
 
-/*const theme = document.querySelector(".light");
+
+const theme = document.querySelector(".light");
+const themeBtn = document.getElementById("theme_btn");
+const buttons = document.querySelectorAll(".light_btn");
 const output = document.getElementById("output");
 
-document.getElementById("theme_btn").onclick=function(){
-    if(this.innerHTML === "Light" && theme.className === "light"){
+themeBtn.onclick = function() {
+    if (this.innerHTML === "Light" && theme.className === "light") {
         this.innerHTML = "Dark";
         theme.className = "dark";
-    }else if(this.innerHTML === "Dark" && theme.className === "dark"){
+        buttons.forEach(function(button) {
+            button.className = "dark_btn";
+        });
+    } else if (this.innerHTML === "Dark" && theme.className === "dark") {
         this.innerHTML = "Light";
         theme.className = "light";
+        buttons.forEach(function(button) {
+            button.className = "light_btn";
+        });
     }
 };
 
-document.getElementById("form").addEventListener("submit",function(e){
+document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     var username = document.getElementById("username").value;
@@ -77,15 +86,9 @@ document.getElementById("form").addEventListener("submit",function(e){
 
     if (username !== "" && email !== "" && passwd !== "") {
         output.innerHTML = "Username: " + username + "<br> Email: " + email + "<br> Password: " + passwd;
-    } else if (username === "" && email !== "" && passwd !== "") {
-        output.innerHTML = "Veriler Bos";
-    } else if (username !== "" && email === "" && passwd !== "") {
-        output.innerHTML = "Veriler Bos";
-    } else if (username !== "" && email === "" && passwd === "") {
-        output.innerHTML = "Veriler Bos";
     } else {
-        output.innerHTML = "Veriler Bos"
+        output.innerHTML = "Veriler Boş";
     }
 
     document.getElementById("form").reset();
-});*/
+});
