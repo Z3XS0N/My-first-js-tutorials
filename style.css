@@ -60,3 +60,87 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/*hesap makinesi*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 32px;
+    text-align: right;
+    padding: 3px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.operator {
+    background-color: #f3ac4b;
+    color: #000;
+}
+
+.operator:hover {
+    background-color: #f3c685;
+}
+
+#equals {
+    background-color: #2ecc71;
+    color: #000;
+}
+
+#equals:hover {
+    background-color: #3edc81;
+}
+
+#clear,
+#delete {
+    background-color: #ff5858;
+    color: #000;
+}
+
+#clear:hover,
+#delete:hover {
+    background-color: #ff7777;
+}

@@ -113,3 +113,36 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
     document.getElementById("form").reset();
 });*/
+
+//================== Hesap Makinesi ======================= 😎tasarım chatgpt-den yazılım bizden
+
+const display = document.getElementById("display");
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const buttonText = button.textContent;
+        const displayText = display.value;
+
+        if(displayText === "function Error() { [native code] }" || displayText === "undefined" || displayText === "Error"){
+            display.value = "";
+        }
+        if (buttonText === "=") {
+            try {
+                const result = eval(displayText);
+                display.value = result;
+            } catch (error) {
+                display.value = "Error";
+            }
+        } else if (buttonText === "C") {
+            display.value = "";
+        } else if (buttonText === "←") {
+            if(displayText === "function Error() { [native code] }" || displayText === "undefined" || displayText === "Error"){
+                display.value = displayText;
+            }else {
+                display.value = displayText.slice(0, -1);
+            }
+        } else {
+            display.value += buttonText;
+        }
+    });
+});
