@@ -116,6 +116,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
 //================== Hesap Makinesi ======================= 😎tasarım chatgpt-den yazılım bizden
 
+/*
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
@@ -145,4 +146,4 @@ buttons.forEach(button => {
             display.value += buttonText;
         }
     });
-});
+});*/
