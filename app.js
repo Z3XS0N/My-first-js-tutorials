@@ -147,3 +147,28 @@ buttons.forEach(button => {
         }
     });
 });*/
+
+
+// ==================== Mesajlaşma Projesi ==================================
+
+/*
+const mesaj = document.getElementById("mesaj");
+const messages = document.getElementById("messages");
+var number = 0;
+
+document.getElementById("send").onclick = function() {
+    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    messages.innerHTML += `
+        <div class="message sent">
+            <p>${mesaj.value}</p>
+            <span class="message-time">${currentTime}</span>
+        </div>
+        <div class="message received">
+            <p>Mesaj Sayı: ${number++}</p>
+            <span class="message-time">${currentTime}</span>
+        </div>
+    `;
+    messages.scrollTop = messages.scrollHeight;
+};
+*/

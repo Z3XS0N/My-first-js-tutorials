@@ -1,4 +1,4 @@
-.dark{
+/*.dark{
     background-color: black;
     color: white;
 }
@@ -59,11 +59,11 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
+}*/
 
 /*hesap makinesi*/
 
-
+/*
 body {
     display: flex;
     justify-content: center;
@@ -143,4 +143,93 @@ button:hover {
 #clear:hover,
 #delete:hover {
     background-color: #ff7777;
+}*/
+
+/*==================== Mesajlaşma Projesi ================================== */
+
+/*#messages {
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 0 auto;
+    transition: height 0.3s ease;
 }
+
+#messages.expanded {
+    height: 500px;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.sent {
+    background-color: #4CAF50;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #555;
+    align-self: flex-start;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #ddd;
+}
+
+.message-input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 70%;
+    padding: 10px;
+    text-align: center;
+    color: #999;
+}
+
+.message-input::placeholder {
+    color: #999;
+    opacity: 0.7;
+}
+.send-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #075e54;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.send-button:hover {
+    background-color: #064c3d;
+}*/
