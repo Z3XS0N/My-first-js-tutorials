@@ -172,3 +172,72 @@ document.getElementById("send").onclick = function() {
     messages.scrollTop = messages.scrollHeight;
 };
 */
+
+
+// ================= Saniye ile Çalışma ===========================
+
+/*const second = document.getElementById("second");
+
+document.addEventListener("DOMContentLoaded",function(){
+    var secondValue = 5;
+    var seconds = setInterval(function(){
+        secondValue--;
+
+        second.innerHTML = secondValue+" saniyede Oldu";
+
+        if(secondValue === 0){
+            clearInterval(seconds);
+        }
+    });
+});*/
+
+// ================== Tıklama Oyunu ==========================
+
+/*
+const score = document.getElementById("score");
+var second = document.getElementById("countdown");
+const start = document.getElementById("start");
+var number = 0;
+var false_value = 0;
+
+start.addEventListener("click", function() {
+    var inputValue = document.getElementById("input").value;
+    var secondValue = parseInt(inputValue, 10);
+
+    if (!isNaN(secondValue) && secondValue > 0) {
+        number = 0;
+        var countdown = setInterval(function() {
+            secondValue--;
+
+            second.innerText = secondValue + " saniyen var";
+
+            if (secondValue === 0) {
+                clearInterval(countdown);
+                document.getElementById("start").disabled = false;
+                document.getElementById("click").disabled = true;
+            } else if (secondValue >= 0) {
+                document.getElementById("click").disabled = false
+                document.getElementById("start").disabled = true;
+                document.getElementById("click").onclick = function() {
+                    score.innerHTML = number++;
+                };
+            }
+        }, 1000);
+
+        document.getElementById("click").disabled = false; // Butonu aktif hale getir
+    }else{
+        second.innerHTML = "Sayı gir Bak Ağzımı açma";
+        false_value++;
+        console.log(false_value);
+        if(false_value >= 10){
+            second.innerHTML = "Olum geliyor bak tuyamıyorum";
+        }
+        if(false_value >= 20){
+            second.innerHTML = "Hapı Yutarsın yanındada hediye gelir bak";
+        }
+        if(false_value >= 40){
+            second.innerHTML = "Lan Sikik Taşşakmı geçiyon lan benimle sikdir git amk";
+        }
+    }
+});
+*/
