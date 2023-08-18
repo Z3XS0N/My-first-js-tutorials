@@ -116,7 +116,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
 //================== Hesap Makinesi =======================
 
-/*
+
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
@@ -146,7 +146,7 @@ buttons.forEach(button => {
             display.value += buttonText;
         }
     });
-});*/
+});
 
 
 // ==================== Mesajlaşma Projesi ==================================
@@ -241,3 +241,12 @@ start.addEventListener("click", function() {
     }
 });
 */
+
+/* Test */
+
+const p = document.getElementById("p");
+const btn = document.getElementById("btn");
+
+btn.onclick=function(){
+    p.innerHTML = "Malas";
+};
